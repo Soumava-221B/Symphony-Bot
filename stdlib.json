@@ -1,0 +1,46 @@
+{
+  "name": "shawnsolo/symphony-bot",
+  "timeout": 10000,
+  "connector": false,
+  "events": {
+    "functions/events/discord/message/create/prefix/play.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "!play"
+      }
+    },
+    "functions/events/discord/message/create/prefix/stop.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "!stop"
+      }
+    },
+    "functions/events/discord/message/create/prefix/pause.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "!pause"
+      }
+    },
+    "functions/events/discord/message/create/prefix/resume.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "!resume"
+      }
+    },
+    "functions/events/discord/message/create/prefix/queue.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "!queue"
+      }
+    },
+    "functions/events/discord/bot/playback/finished.js": {
+      "name": "discord.bot.playback.finished"
+    },
+    "functions/events/discord/message/create/prefix/hello.js": {
+      "name": "discord.message.create.prefix",
+      "subtype": {
+        "prefix": "!hello"
+      }
+    }
+  }
+}
